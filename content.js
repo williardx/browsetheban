@@ -24,6 +24,9 @@ const bannedWords = {
     "Sudanese",
     "Yemeni",
     "Yemenis"
+  ],
+  "names": [
+  //TODO: include names
   ]
 }
 
