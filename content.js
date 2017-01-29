@@ -59,7 +59,7 @@ function textNodesUnder(el){
 
 function redactedWord(word) {
   let mouseOut = `this.innerHTML='${word}';this.className='bannedword strikethrough';`,
-      mouseOver = `this.innerHTML='#BannedByTrump';this.className='bannedword';`;
+      mouseOver = `this.innerHTML='#MuslimBan';this.className='bannedword';`;
 
   return `<span onMouseOver="${mouseOver}" onMouseOut="${mouseOut}"
           class="bannedword strikethrough">${word}</span>`;
