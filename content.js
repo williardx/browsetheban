@@ -58,12 +58,12 @@ function textNodesUnder(el){
 }
 
 function redactedWord(word) {
-  let mouseOver = `this.innerHTML='${word}';this.style.backgroundColor='white';
-                   this.style.color='black';`,
-      mouseOut = `this.innerHTML='#MuslimBanned';this.style.backgroundColor=
-                  'black';this.style.color='white'`;
+  let mouseOut = `this.innerHTML='${word}';this.style.backgroundColor='white';
+                   this.style.color='black'; this.style.textDecoration='line-through';`,
+      mouseOver = `this.innerHTML='#BannedByTrump';this.style.backgroundColor=
+                  'black';this.style.color='white';this.style.textDecoration='initial';`;
   return `<span onMouseOver="${mouseOver}" onMouseOut="${mouseOut}" style=
-          "background-color:black;color:white;">#MuslimBanned</span>`;
+          "background-color:white;color:black;text-decoration:line-through;">${word}</span>`;
 }
 
 function replaceAllBannedWords(text) {
