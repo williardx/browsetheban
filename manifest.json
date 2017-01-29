@@ -11,7 +11,8 @@
       "exclude_matches": [
         "https://*.google.com/*"
       ],
-      "js": ["content.js"]
+      "js": ["content.js"],
+      "css": ["browsetheban.css"]
     }
   ]
 }
